@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "ab5b6037565985e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d581935e3358702",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3f4124251badf1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_Literature/Literature_Review_Integration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Literature_Review_Integration"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2af6a6977b610b07",
+    "type": "split",
+    "children": [
+      {
+        "id": "48656c87e04db5c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a5420a6101ceaed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "19bc9f26bb698770",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dedb8bd01ffbd9ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a05fb923a0586342",
+    "type": "split",
+    "children": [
+      {
+        "id": "a87a5535994ae0cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d5a919378c35c59",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DECISIONS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for DECISIONS"
+            }
+          },
+          {
+            "id": "0064c6aa2668ad3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DECISIONS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DECISIONS"
+            }
+          },
+          {
+            "id": "ced8f10dba3c7391",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cbc3f48f5e224006",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e3154b4071a17071",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DECISIONS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DECISIONS"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b3f4124251badf1d",
+  "lastOpenFiles": [
+    "02_Literature/Deep_Research_Classification.md",
+    "01_Admin/CHANGELOG.md",
+    "02_Literature/Comprehensive_Deep_Research_Gap_Analysis.md",
+    "01_Admin/LITMAPS_CITATION_MERGE.md",
+    "02_Literature/Deep_Research_Recent_Papers.md",
+    "Dump/So far.md",
+    "05_Drafting/Thesis_Outline.md",
+    "Dump",
+    "04_Results/results_v2_summary.md",
+    "04_Results/Final_Evaluation_500_Epochs.md",
+    "03_Experiments/Post Processing PIPELINE.canvas",
+    "02_Literature/Literature_Review_Integration.md",
+    "01_Admin/RESEARCH_NARRATIVE.md",
+    "01_Admin/README.md",
+    "01_Admin/Problem Statement.md",
+    "Post Processing PIPELINE.canvas",
+    "Problem Statement.md",
+    "README.md",
+    "results_v2_summary.md",
+    "RESEARCH_NARRATIVE.md",
+    "DECISIONS.md",
+    "Welcome.md"
+  ]
+}
