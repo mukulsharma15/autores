@@ -38,8 +38,12 @@
 *   Created `Colab_Task_Aware_Diffusion.ipynb` to integrate the Task-Aware loss, which mathematically punishes the diffusion model for misdiagnosing the disease.
 *   **Cleanup:** Purged all old codes, legacy notebooks, temp python files, and outputs. Restructured everything into four clean, transfer-ready folders (`01_Dataset`, `02_Notebooks_Final`, `03_Literature`, `04_Thesis_Vault`).
 
+### 8. Fixed Architecture Mismatch for Clinical Evaluation
+*   Encountered a `RuntimeError` when trying to load KAN `.pth` weights (`dm_v2_strict_kan_best.pth`) into the standard `ConditionalUNet1D` within the Classification Evaluation notebook.
+*   **Fix:** Identified that KAN networks replace standard convolutional layers with `KANConv1d` (using `conv_base` and `conv_spline`). Completely replaced the standard UNet definition with the correct KAN architecture in the evaluation notebook and corrected the argument order in the `model(x, cond, t)` forward pass. The evaluation is now successfully running on Colab.
+
 ## Next Action Items (Post-Migration)
-*   [ ] Transfer `01_Dataset` and `02_Notebooks_Final` to the new device/Colab.
+*   [x] Transfer `01_Dataset` and `02_Notebooks` to the new device/Colab.
 *   [x] Run `Colab_Improved_Classifier.ipynb` to establish a robust Macro F1 > 0.50. (Achieved Macro F1: 0.8440, AUROC: 0.9429!)
-*   [ ] Run `Colab_Task_Aware_Diffusion.ipynb` to apply the Task-Aware Clinical Loss using the robust oracle.
-*   [ ] Finish running the `KAN` and `DCT` notebooks to maximize the ImSNR.
+*   [x] Run `Colab_Task_Aware_Diffusion.ipynb` to apply the Task-Aware Clinical Loss using the robust oracle. (Currently running on Colab with multi-GPU support).
+*   [ ] Finish running the `KAN` and `DCT` notebooks to maximize the ImSNR, and complete their downstream clinical evaluation.

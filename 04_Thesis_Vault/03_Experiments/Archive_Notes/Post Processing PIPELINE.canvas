@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"17a7005f3c086cf3","type":"text","text":"ECG-IMAGE-KIT **GENERATOR**","x":-1165,"y":-720,"width":250,"height":50},
+		{"id":"304e81c848a6fc7b","type":"text","text":"life like ecg images 2D","x":-1165,"y":-640,"width":250,"height":60},
+		{"id":"deb643e7d5db764e","type":"text","text":"ECG-image-kit **DIGITIZER**","x":-1165,"y":-540,"width":250,"height":60},
+		{"id":"b4f87248bfea8552","x":-880,"y":-440,"width":160,"height":60,"type":"text","text":"denoising step\nextract samples "},
+		{"id":"4f49727e721d28de","type":"text","text":"PTB-XL DATASET \nraw 1D time series data\n(ground truth)","x":-880,"y":-900,"width":250,"height":74},
+		{"id":"380d180c7adcecd6","type":"text","text":"DIffusion Model (post processing)","x":-600,"y":-630,"width":250,"height":50},
+		{"id":"ec8019111d86a848","type":"text","text":"1D time series data (clean)","x":-600,"y":-380,"width":250,"height":60},
+		{"id":"0f8479a637e32355","type":"text","text":"1D time series data (NOISY)","x":-1165,"y":-320,"width":250,"height":60},
+		{"id":"097c6851a049e970","type":"text","text":"CLASSIFIER","x":-845,"y":-120,"width":250,"height":60},
+		{"id":"60b17a530f1fe1b9","type":"text","text":"COMPARISION of RESULTS","x":-845,"y":20,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"7a77fe308ac4e637","fromNode":"4f49727e721d28de","fromSide":"bottom","toNode":"17a7005f3c086cf3","toSide":"top"},
+		{"id":"54db7a4c9832b371","fromNode":"17a7005f3c086cf3","fromSide":"bottom","toNode":"304e81c848a6fc7b","toSide":"top"},
+		{"id":"d409254235a759df","fromNode":"304e81c848a6fc7b","fromSide":"bottom","toNode":"deb643e7d5db764e","toSide":"top"},
+		{"id":"49f0c87569e45268","fromNode":"deb643e7d5db764e","fromSide":"bottom","toNode":"0f8479a637e32355","toSide":"top"},
+		{"id":"69e4c61c9ccf1c5d","fromNode":"4f49727e721d28de","fromSide":"bottom","toNode":"380d180c7adcecd6","toSide":"left"},
+		{"id":"3134573df0cfde9b","fromNode":"380d180c7adcecd6","fromSide":"bottom","toNode":"ec8019111d86a848","toSide":"top"},
+		{"id":"14ba7f798d86a0b1","fromNode":"0f8479a637e32355","fromSide":"bottom","toNode":"097c6851a049e970","toSide":"top"},
+		{"id":"7966d3fb60f8e038","fromNode":"ec8019111d86a848","fromSide":"bottom","toNode":"097c6851a049e970","toSide":"top"},
+		{"id":"08aca42a4d1ddec1","fromNode":"097c6851a049e970","fromSide":"bottom","toNode":"60b17a530f1fe1b9","toSide":"top"},
+		{"id":"528c9b6b33823f6a","fromNode":"deb643e7d5db764e","fromSide":"bottom","toNode":"b4f87248bfea8552","toSide":"left"},
+		{"id":"0633526e2eca76ea","fromNode":"b4f87248bfea8552","fromSide":"right","toNode":"380d180c7adcecd6","toSide":"left"}
+	]
+}

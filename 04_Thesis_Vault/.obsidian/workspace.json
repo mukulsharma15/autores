@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Literature/Literature_Review_Integration.md",
+                "file": "05_Drafting/Thesis_Outline.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Literature_Review_Integration"
+              "title": "Thesis_Outline"
             }
           }
         ]
@@ -185,6 +185,27 @@
   },
   "active": "b3f4124251badf1d",
   "lastOpenFiles": [
+    "02_Literature/thesis_deep_research_brief.provenance.md",
+    "02_Literature/thesis_deep_research_brief.md",
+    "02_Literature/references.bib",
+    "02_Literature/literature_review_ecg_diffusion.md",
+    "02_Literature/Thesis_Writing_Guide.md",
+    "02_Literature/Thesis_Literature_Review_and_Gaps.md",
+    "03_Experiments/Archive_Notes/What I have done so far in research.md",
+    "03_Experiments/Archive_Notes/QNA.md",
+    "03_Experiments/Archive_Notes/Python ECG digitizer (open source).md",
+    "03_Experiments/Archive_Notes/Post Processing PIPELINE.canvas",
+    "03_Experiments/Archive_Notes/Paper idea.md",
+    "03_Experiments/Archive_Notes/Logic chain.md",
+    "03_Experiments/Archive_Notes/Final Presentation.md",
+    "03_Experiments/Archive_Notes/FM - future directions to current work.md",
+    "03_Experiments/Archive_Notes/Current status.md",
+    "03_Experiments/Archive_Notes",
+    "05_Drafting/Presentation_Content.md",
+    "05_Drafting/Poster_Content.md",
+    "05_Drafting/Chapter_3_Methodology_Draft.md",
+    "What_I_Did_Today.md",
+    "02_Literature/Literature_Review_Integration.md",
     "02_Literature/Deep_Research_Classification.md",
     "01_Admin/CHANGELOG.md",
     "02_Literature/Comprehensive_Deep_Research_Gap_Analysis.md",
@@ -194,18 +215,7 @@
     "05_Drafting/Thesis_Outline.md",
     "Dump",
     "04_Results/results_v2_summary.md",
-    "04_Results/Final_Evaluation_500_Epochs.md",
     "03_Experiments/Post Processing PIPELINE.canvas",
-    "02_Literature/Literature_Review_Integration.md",
-    "01_Admin/RESEARCH_NARRATIVE.md",
-    "01_Admin/README.md",
-    "01_Admin/Problem Statement.md",
-    "Post Processing PIPELINE.canvas",
-    "Problem Statement.md",
-    "README.md",
-    "results_v2_summary.md",
-    "RESEARCH_NARRATIVE.md",
-    "DECISIONS.md",
-    "Welcome.md"
+    "Post Processing PIPELINE.canvas"
   ]
 }
