@@ -20,3 +20,8 @@
 *   **Action Taken:** Fixed `NameError` and optimized `Colab_Task_Aware_Diffusion.ipynb` to utilize multiple GPUs via `DataParallel` on Kaggle/Colab, increasing batch size and robustly handling model state saving/loading.
 *   **Action Taken:** Resolved a critical architecture mismatch in the Clinical Classification notebook when evaluating KAN diffusion weights. The standard U-Net was incompatible with `KANConv1d` parameters. Replaced the U-Net with the KAN architecture and fixed the `forward` pass signature (`model(x, cond, t)`). Evaluation is now successfully running.
 *   **Project Maintenance:** Completed a massive workspace restructuring. Merged duplicate files from backups, consolidated notebooks into `Active/` and `Archive/`, deleted redundant datasets, and safely moved all old scratchpads and AI outputs into `04_Thesis_Vault/`. Rewrote Chapter 3 Methodology, Presentation, and Poster drafts to reflect the complete 7,601 paired dataset logic and the 4 critical extraction bugs discovered.
+
+## 2026-05-04
+*   **Action Taken:** Evaluated the KAN Layer architectural upgrade (`v2_strict_eval_7601_KAN.ipynb`).
+*   **Result:** The KAN model outperformed the standard U-Net, achieving an **ImSNR of +1.17 dB** and a **10.73% RMSE reduction**. The success rate on the unseen test set increased to **89%** (1,342/1,507).
+*   **Next Steps:** Generated `Colab_Task_Aware_Diffusion_KAN.ipynb` to combine the top-performing KAN architecture with the Task-Aware Clinical Loss.

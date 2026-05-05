@@ -45,5 +45,6 @@
 ## Next Action Items (Post-Migration)
 *   [x] Transfer `01_Dataset` and `02_Notebooks` to the new device/Colab.
 *   [x] Run `Colab_Improved_Classifier.ipynb` to establish a robust Macro F1 > 0.50. (Achieved Macro F1: 0.8440, AUROC: 0.9429!)
-*   [x] Run `Colab_Task_Aware_Diffusion.ipynb` to apply the Task-Aware Clinical Loss using the robust oracle. (Currently running on Colab with multi-GPU support).
-*   [ ] Finish running the `KAN` and `DCT` notebooks to maximize the ImSNR, and complete their downstream clinical evaluation.
+*   [x] Evaluated KAN architecture. (ImSNR jumped to +1.17 dB, success rate hit 89%!)
+*   [ ] Run `Colab_Task_Aware_Diffusion_KAN.ipynb` to combine the top-performing KAN architecture with the Clinical Oracle loss function.
+*   [ ] Analyze final classification results to complete the clinical utility argument.
