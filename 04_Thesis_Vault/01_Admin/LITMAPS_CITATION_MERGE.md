@@ -78,4 +78,36 @@
   booktitle={International Conference on Computing in Cardiology},
   year={2024}
 }
+
+@article{li2022descod,
+  title={DeScoD-ECG: Deep Score-Based Diffusion Model for ECG Baseline Wander and Noise Removal},
+  author={Li, Huayu and others},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  volume={27},
+  number={4},
+  pages={1883--1894},
+  year={2023},
+  publisher={IEEE}
+}
+
+@inproceedings{huang2025timekan,
+  title={TimeKAN: KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting},
+  author={Huang, et al.},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025}
+}
+
+@article{2025rhythmdiff,
+  title={Reconstructing ECG from indirect signals: a denoising diffusion approach (RhythmDiff)},
+  author={Barkalov, et al.},
+  journal={Philosophical Transactions of the Royal Society A},
+  year={2025}
+}
+
+@article{2025ecgtwin,
+  title={ECGTwin: Personalized ECG Generation Using Controllable Diffusion Model},
+  author={Zhu, et al.},
+  journal={arXiv preprint arXiv:2508.02720},
+  year={2025}
+}
 ```
