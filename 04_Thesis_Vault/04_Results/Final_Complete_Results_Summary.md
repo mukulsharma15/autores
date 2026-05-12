@@ -6,6 +6,7 @@ This document consolidates the absolute best, mathematically verified results ac
 
 ## 1. Best Signal Quality Reconstruction
 **Experiment:** 500-Epoch U-Net Conditional DDPM on 7,601 samples.
+**Source Notebook / Reference:** `04_Thesis_Vault/04_Results/Final_Evaluation_500_Epochs.md` (Archived 500-epoch full training run)
 **Outcome:** The model successfully restored the physiological distribution of the signal, drastically outperforming the baseline optical digitizer.
 
 *   **ImSNR:** +1.7682 dB
@@ -15,6 +16,7 @@ This document consolidates the absolute best, mathematically verified results ac
 
 ## 2. Best Architectural Upgrade
 **Experiment:** Replacing standard U-Net convolutions with Kolmogorov-Arnold Network (KAN) layers on a strict hold-out test set (1,507 unseen patients).
+**Source Notebook:** `02_Notebooks_Final/01_Train_Evaluate_KAN_Diffusion.ipynb` (Originally derived from `Archive/v2_strict_eval_7601_KAN.ipynb`)
 **Outcome:** KAN's adaptive splines proved vastly superior at handling global non-linear shifts like baseline wander compared to the standard CNN or Discrete Cosine Transform (DCT) conditioning.
 
 *   **U-Net ImSNR:** +1.03 dB
@@ -24,6 +26,7 @@ This document consolidates the absolute best, mathematically verified results ac
 
 ## 3. Best Clinical Utility (The Baseline Proof)
 **Experiment:** Running the raw digitized signals vs. the diffusion-refined signals through a standard downstream clinical classifier to prove the denoising actually helps medical AI.
+**Source Notebook:** `02_Notebooks_Final/Archive/Colab_Clinical_Classification_results.ipynb` (Reproducible via `02_Notebooks_Final/02_Clinical_Utility_Evaluation.ipynb` at 15 epochs)
 **Outcome:** The generative cleanup successfully removed enough optical noise to allow the classifier to make better predictions.
 
 *   **Raw Digitizer (Noisy Input) Macro F1:** 0.1641
@@ -33,6 +36,7 @@ This document consolidates the absolute best, mathematically verified results ac
 
 ## 4. The Clinical Boundary (The Smoothing Discovery)
 **Experiment:** Evaluating the top-tier KAN architecture against a highly sensitive, fully trained Clinical Oracle (Oracle Clean F1: 0.844).
+**Source Notebook:** `02_Notebooks_Final/Archive/Colab_Task_Aware_Diffusion_KAN.ipynb` (Reproducible via `02_Notebooks_Final/02_Clinical_Utility_Evaluation.ipynb` at 100 epochs)
 **Outcome:** Discovered the critical boundary of generative AI in cardiology.
 *   **Noisy Raw Signal F1:** 0.418
 *   **KAN-Refined Signal F1:** 0.326
