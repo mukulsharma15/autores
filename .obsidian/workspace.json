@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Dataset/DATASET_CARD.md",
+                "file": "04_Thesis_Vault/05_Drafting/Master_Thesis_Comprehensive_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DATASET_CARD"
+              "title": "Master_Thesis_Comprehensive_Draft"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c41e1e665f71f204",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa83d16f791269f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04_Thesis_Vault/05_Drafting/Chapter_1_Introduction_Draft.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter_1_Introduction_Draft"
             }
           }
         ]
@@ -78,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 441.5026054382324
+    "width": 242.50260543823242
   },
   "right": {
     "id": "47a1c687e6a53494",
@@ -94,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Dataset/DATASET_CARD.md",
+                "file": "05_Thesis_by_Mukul/Drafts/Abstract.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DATASET_CARD"
+              "title": "Backlinks for Abstract"
             }
           },
           {
@@ -113,12 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Dataset/DATASET_CARD.md",
+                "file": "05_Thesis_by_Mukul/Drafts/Abstract.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from DATASET_CARD"
+              "title": "Outgoing links from Abstract"
             }
           },
           {
@@ -156,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Dataset/DATASET_CARD.md",
+                "file": "05_Thesis_by_Mukul/Drafts/Abstract.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DATASET_CARD"
+              "title": "Outline of Abstract"
             }
           }
         ]
@@ -184,23 +204,78 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2877d9454b1593be",
+  "floating": {
+    "id": "6d0e8e44a5e48c11",
+    "type": "floating",
+    "children": [
+      {
+        "id": "555c3d8a634ac2f1",
+        "type": "window",
+        "children": [
+          {
+            "id": "17c312937587655c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71806f92a00d68a3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "05_Thesis_by_Mukul/Drafts/Abstract.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Abstract"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 834,
+        "height": 1005,
+        "maximize": false,
+        "zoom": 0.5
+      }
+    ]
+  },
+  "active": "71806f92a00d68a3",
   "lastOpenFiles": [
+    "04_Thesis_Vault/05_Drafting/Master_Thesis_Comprehensive_Draft.md",
+    "05_Thesis_by_Mukul/Drafts/Abstract.md",
+    "04_Thesis_Vault/04_Results/Final_Complete_Results_Summary.md",
     "04_Thesis_Vault/05_Drafting/Chapter_1_Introduction_Draft.md",
-    "02_Notebooks_Final/02_Clinical_Utility_Evaluation.ipynb",
-    "02_Notebooks_Final/01_Train_Evaluate_KAN_Diffusion.ipynb",
-    "02_Notebooks_Final/Archive/v2_strict_eval_7601_KAN.ipynb",
-    "02_Notebooks_Final/Archive/v2_strict_eval_7601_DCT.ipynb",
-    "02_Notebooks_Final/Archive/Colab_Task_Aware_Diffusion_KAN.ipynb",
-    "02_Notebooks_Final/Archive/colab-task-aware-diffusion.ipynb",
-    "02_Notebooks_Final/Archive/Colab_Clinical_Classification_results.ipynb",
-    "02_Notebooks_Final/Archive",
-    "01_Dataset/DATASET_CARD.md",
-    "fix_splits_demographics_no_np.py",
-    "fix_splits_demographics.py",
-    "04_Thesis_Vault/05_Drafting/Chapter_2_Literature_Review_Draft.md",
+    "04_Thesis_Vault/05_Drafting/Final_Presentation_Draft.md",
+    "04_Thesis_Vault/03_Experiments/Archive_Notes/Final Presentation.md",
+    "04_Thesis_Vault/05_Drafting/Poster_Content.md",
     "04_Thesis_Vault/01_Admin/CHANGELOG.md",
+    "04_Thesis_Vault/01_Admin/RESEARCH_NARRATIVE.md",
+    "04_Thesis_Vault/01_Admin/README.md",
+    "04_Thesis_Vault/05_Drafting/Thesis_Outline.md",
+    "04_Thesis_Vault/05_Drafting/Presentation_Content.md",
+    "04_Thesis_Vault/05_Drafting/Informal_Timeline_Notes.md",
+    "04_Thesis_Vault/05_Drafting/Chapter_5_Future_Work_Draft.md",
     "04_Thesis_Vault/05_Drafting/Chapter_4_Results_Draft.md",
-    "04_Thesis_Vault/05_Drafting/Informal_Timeline_Notes.md"
+    "04_Thesis_Vault/05_Drafting/Chapter_3_Methodology_Draft.md",
+    "04_Thesis_Vault/05_Drafting/Chapter_2_Literature_Review_Draft.md",
+    "05_Thesis_by_Mukul/Drafts",
+    "05_Thesis_by_Mukul",
+    "04_Thesis_Vault/01_Admin/Problem Statement.md",
+    "04_Thesis_Vault/01_Admin/LITMAPS_CITATION_MERGE.md",
+    "01_Dataset/DATASET_CARD.md",
+    "best_kan_diffusion_50epochs.pth",
+    "best_kan_diffusion_50epochs.pth.crdownload",
+    "training_convergence_50epochs.png",
+    "refined_test_samples_50epochs.npy",
+    "refined_test_samples_50epochs.npy.crdownload",
+    "ecg_reconstruction_plot_50epochs.png",
+    "ecg_reconstruction_plot_50epochs.png.crdownload",
+    "best_kan_diffusion.pth",
+    "best_kan_diffusion.pth.crdownload",
+    "02_Notebooks_Final/dm_v2_strict_kan_best.pth"
   ]
 }

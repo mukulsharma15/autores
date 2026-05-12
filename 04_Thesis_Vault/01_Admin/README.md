@@ -25,7 +25,7 @@ ECG Image → ECG-Image-Kit Digitizer → Noisy Signal → cDDPM → Refined Sig
 | DM on synthetic data            | +78.8% MSE                    |
 | **DM on v2 dataset — isolated** | **+15.74% MSE, +8.18% SNR** ✅ |
 
-
+s
 **Primary open experiment:** Retrain with independent normalization to close the isolated vs. integrated gap.
 
 ---
