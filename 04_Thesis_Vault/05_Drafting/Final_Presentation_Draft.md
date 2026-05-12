@@ -99,10 +99,11 @@ Supervisor: Prof. Pranab K. Muhuri
 ---
 
 # Future Work
-How do we solve the clinical smoothing problem?
+How do we solve the clinical smoothing problem and expand the evaluation?
 1.  **High-Frequency Residual Blending:** Use signal processing (High/Low pass filters) to bypass the neural network, retaining the exact jagged clinical spikes while utilizing the AI solely for the baseline.
 2.  **Wavelet-Domain Diffusion:** Run diffusion on the Discrete Wavelet Transform (DWT), allowing explicit loss penalties on high-frequency "Detail" coefficients.
 3.  **Latent Clinical Diffusion:** Use a VQ-VAE to compress the ECG into a latent space tightly bound to a clinical classifier, preventing time-domain blurring.
+4.  **2D Vision Ablation Study:** Benchmark our 1D Refinement pipeline against models that classify the 2D scanned images directly (e.g., Vision Transformers/ConvNeXt) to definitively compare "black box" vision classification vs. interpretable 1D extraction.
 
 ---
 
