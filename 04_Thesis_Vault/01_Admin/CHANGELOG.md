@@ -25,3 +25,11 @@
 *   **Action Taken:** Evaluated the KAN Layer architectural upgrade (`v2_strict_eval_7601_KAN.ipynb`).
 *   **Result:** The KAN model outperformed the standard U-Net, achieving an **ImSNR of +1.17 dB** and a **10.73% RMSE reduction**. The success rate on the unseen test set increased to **89%** (1,342/1,507).
 *   **Next Steps:** Generated `Colab_Task_Aware_Diffusion_KAN.ipynb` to combine the top-performing KAN architecture with the Task-Aware Clinical Loss.
+
+## 2026-05-10
+*   **Action Taken:** Finalized evaluation of `Colab_Task_Aware_Diffusion_KAN.ipynb` against the strong Clinical Oracle (100 epochs, 0.844 Baseline F1).
+*   **Result:** Discovered and proved the "Smoothing Problem." While basic denoising improved standard classifiers (+11.9% F1), the highly parameterized KAN diffusion smoothed over the high-frequency micro-arrhythmias needed by the strong oracle, dropping the F1 to 0.326.
+*   **Action Taken:** Executed final dataset enrichment. Mapped PTB-XL demographics (`age`, `sex`) and diagnostic superclasses (`NORM`, `MI`, `STTC`, `CD`, `HYP`) directly into `01_Dataset/metadata.csv`.
+*   **Action Taken:** Hard-coded a 70/15/15 train/val/test split using strict `ecg_id` grouping into the metadata, formalizing OD-PTB-XL as a standalone benchmark dataset. Created `DATASET_CARD.md`.
+*   **Project Maintenance:** Archived fragmented exploratory notebooks. Generated two final, professional evaluation notebooks (`01_Train_Evaluate_KAN_Diffusion.ipynb`, `02_Clinical_Utility_Evaluation.ipynb`) with high-DPI matplotlib plotting.
+*   **Documentation:** Fully drafted and saved the architectural blueprints for all five Master's Thesis chapters inside `05_Drafting/`.

@@ -155,3 +155,14 @@ To ensure the thesis results are academically bulletproof and free of data leaka
    * KS_Stat Improvement: **5.15%** (proving the generative signal distribution matches the biological ground truth closer than the deterministic baseline).
 
 This confirms the core hypothesis: 1D Conditional Diffusion is a highly effective, generalizable post-digitization refinement layer.
+
+## The Advanced Architectures & The "Smoothing Problem" (May 2026)
+Following the success of the baseline U-Net, the architecture was upgraded using Kolmogorov-Arnold Networks (KAN). 
+*   **KAN Results:** The adaptive splines proved mathematically superior at handling global non-linear shifts (baseline wander), pushing the ImSNR to **+1.17 dB** and the success rate to **89%**.
+
+**The Downstream Clinical Tradeoff:**
+To test true clinical utility, the refined signals were passed to a 1D ResNet diagnostic classifier. 
+*   Against a weak baseline classifier, the diffusion refinement aided diagnosis, improving the F1 score by **+11.9%**.
+*   However, when tested against a highly sensitive Clinical Oracle (Baseline F1 = 0.844), the diffusion model worsened the classification to 0.326.
+
+This established the final, profound conclusion of the thesis: **The Generative Smoothing Problem**. While MSE-driven diffusion models perfectly remove aesthetic baseline wander and quantization noise, their generative nature acts as a low-pass filter, erasing the high-frequency micro-arrhythmias (like Q-wave notches) required by advanced diagnostic AI.
