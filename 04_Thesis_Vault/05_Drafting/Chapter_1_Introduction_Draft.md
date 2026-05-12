@@ -6,9 +6,9 @@
 *   **1.3 Failure of Traditional Methods:** Standard signal processing (e.g., Butterworth filters) cannot separate optical noise from clinical signals because they share the same frequency bands.
 *   **1.4 The Hypothesis:** A generative AI model, specifically a Conditional Denoising Diffusion Probabilistic Model (cDDPM), can act as a post-digitization refinement layer to map noisy extracted signals back to their true biological manifold.
 *   **1.5 The Scope & Contributions:** 
-    *   Creation of a novel 7,601-sample paired dataset.
-    *   Application of Kolmogorov-Arnold Networks (KAN) to 1D ECG diffusion.
-    *   Rigorous downstream clinical evaluation proving both the utility and the limitations (the "smoothing problem") of generative ECG denoising.
+    *   Creation of a novel 7,601-sample paired dataset (OD-PTB-XL) with strictly embedded train/val/test splits to guarantee zero data leakage.
+    *   Application of Kolmogorov-Arnold Networks (KAN) to 1D ECG diffusion, achieving a mathematically validated ImSNR of +1.17 dB.
+    *   Rigorous downstream clinical evaluation proving both the utility (+11.9% F1 on standard AI) and the limitations (the generative "smoothing problem" on sensitive oracles) of generative ECG denoising.
 
 ---
 
@@ -21,4 +21,4 @@ Traditional signal processing techniques struggle to correct these specific arti
 
 This thesis proposes the application of a Conditional Denoising Diffusion Probabilistic Model (cDDPM) as a post-digitization refinement step. Rather than attempting to generate an ECG from pure noise, this approach utilizes partial reverse diffusion to correct the specific deterministic errors introduced by optical extraction tools. By conditioning the model on the noisy signal and guiding it toward the clean biological manifold, the architecture attempts to restore the true morphology of the heartbeat.
 
-The contributions of this work are threefold. First, it introduces a highly rigorous, perfectly aligned dataset of 7,601 paired (noisy, clean) ECG segments, solving critical data-leakage and normalization bugs found in prior extraction methodologies. Second, it pioneers the integration of Kolmogorov-Arnold Network (KAN) layers into a 1D diffusion backbone, demonstrating superior capability in handling baseline wander compared to standard convolutional architectures. Finally, this thesis moves beyond simple signal-quality metrics to conduct a rigorous downstream clinical evaluation. It empirically proves that while basic diffusion improves standard diagnostic pipelines, aggressively generative denoising introduces a "smoothing" effect that can actively erase the micro-arrhythmias required by highly sensitive clinical oracles.
+The contributions of this work are threefold. First, it introduces a highly rigorous, perfectly aligned dataset of 7,601 paired (noisy, clean) ECG segments, solving critical data-leakage and normalization bugs found in prior extraction methodologies by embedding strict patient-grouped data splits. Second, it pioneers the integration of Kolmogorov-Arnold Network (KAN) layers into a 1D diffusion backbone, demonstrating superior capability in handling baseline wander compared to standard convolutional architectures (achieving +1.17 dB SNR and a 35.2% improvement in biological KS distributions). Finally, this thesis moves beyond simple signal-quality metrics to conduct a rigorous downstream clinical evaluation. It empirically proves that while basic diffusion improves standard diagnostic pipelines (+11.9% F1 improvement), aggressively generative denoising introduces a "smoothing" effect that can actively erase the micro-arrhythmias required by highly sensitive clinical oracles.
